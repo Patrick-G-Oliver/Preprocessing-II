@@ -172,18 +172,20 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
   width: 100%;
+  margin: 0 auto;
   padding: 2.5% 0;
   border-bottom: 2px dashed #C0C0C0;
 }
 .navigation h1 {
-  margin-left: 11%;
+  margin-left: 10%;
 }
 .navigation nav {
   display: flex;
   justify-content: space-around;
-  width: 35%;
-  margin-right: 12%;
+  width: 33%;
+  margin-right: 10.75%;
 }
 .navigation a {
   text-decoration: none;
@@ -255,4 +257,13 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  background-color: #34867f;
+  color: white;
+  text-align: center;
+  width: 84%;
+  padding: 12px;
+  border-radius: 15px;
+  font-size: 2rem;
 }
