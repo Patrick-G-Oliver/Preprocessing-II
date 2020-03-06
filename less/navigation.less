@@ -1,1 +1,49 @@
 // Navigation Styles here
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2.5% 0;
+    border-bottom: 2px dashed @navigation-border;
+    // The max-width here was set at 993px because it appears to
+    // match the width at which the fun-bus-desktop.png image
+    // was captured.
+    max-width: 993px;
+
+    @media @mobile {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1 {
+        margin-left: 10%;
+
+        @media @mobile {
+            margin-left: 5%;
+            padding: 2% 0 4% 0;
+            font-size: 3.25rem;
+            width: 30%
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        width: 33%;
+        margin-right: 11%;
+
+        @media @mobile {
+            width: 90%;
+            margin: 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.6rem;
+    }
+}
