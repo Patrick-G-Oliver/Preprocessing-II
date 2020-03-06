@@ -4,15 +4,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 2.5% 0;
     border-bottom: 2px dashed @navigation-border;
-
-    @media (min-width: 1042px) {
-        border: 1px solid red;
-    }
+    // The max-width here was set at 993px because it appears to
+    // match the width at which the fun-bus-desktop.png image
+    // was captured.
+    max-width: 993px;
 
     @media @mobile {
         flex-wrap: wrap;
